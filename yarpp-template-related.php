@@ -25,5 +25,6 @@ if ( $related_query -> have_posts() ) :
 			</div>
 		</div>
 		<!--</game>-->
+		<?php
 	endwhile;
 endif;
