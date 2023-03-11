@@ -64,3 +64,28 @@ abbr[title] {cursor: help; text-decoration: underline;}
 blockquote {padding: 10px 15px; border-left: 5px solid #eee;}
 blockquote :first-child {margin-top: 0;}
 hr {border: solid #f5f5f5; border-width: 1px 0 0; margin: 15px 0;}
+ul, ol {padding-left: 25px;}
+ul[class] {padding-left: 0;}
+nav ul, [class*="cntcls"], [class*="lst-"], [class*="lst-"] ul, [class*="menu-"], [class*="menu-"] ul {list-style: none; margin-top: 0; padding-left: 0;}
+nav ul {margin-bottom: 0;}
+:focus {outline: 0;}
+::-webkit-scrollbar {width: 8px; height: 10px; backgorund-color: #D6D6D6;}
+::-webkit-scrollbar-thumb {background-color: #37B8AE;}
+
+/*=====<[2.0] - Print CSS>=====*/
+@media print {
+	* {background: transparent !important; color: #000 !important; box-shadow: none !important; text-shadow: none !important; filter: none !important;}
+	a, a:visited {text-decoration: underline;}
+	a[href]:after {content: "(" attr(href) ")";}
+	abbr[title]:after {content: "(" attr(title) ")";}
+	a[href^="javascript:"]:after, a[href^="#"] {content: "";}
+	pre, blockquote {border: 1px solid #999; page-break-inside: avoid;}
+	thead {display: table-header-group;}
+	tr, img {page-break-inside: avoid;}
+	img {max-width: 100% !important;}
+	p, h2, h3 {orphans: 3; widows: 3;}
+	h2, h3 {page-break-after: avoid;}
+	select {background: #fff !important;}
+}
+
+/*=====<[3.0] - Framework 1.0>=====*/
