@@ -106,3 +106,4 @@ h3 {font-size: 16px;}
 [class*="cntcls"] {margin-right: -10px; margin-left: -10px;}
 [class*="cols-"], [class*="cntcls-n"]>* {padding: 0 10px; position: relative;}
 [class*="lstcl-100p"]>:last-child, [class*="cols-n12"] {min-width: 100%; clear: both;}
+/*10px*/
