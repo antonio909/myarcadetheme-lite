@@ -89,3 +89,20 @@ nav ul {margin-bottom: 0;}
 }
 
 /*=====<[3.0] - Framework 1.0>=====*/
+.boxed-cont [class*="hdcn-"], .boxed-cont .bdcn, .boxed-cont [class*="ftcn-"], .cont {margin: 0 auto;}
+.cont {padding-left: 15px; padding-right: 15px;}
+
+/*=====<[3.1] - Typography>=====*/
+h1, h2, h3, h4, h5, h6, ul, ol, blockquote, table, p+p, dl, dt, pre {margin-top: 15px;}
+:first-child {margin-top: 0;}
+h1, h2, h3 {font-weight: 700;}
+h1 {font-size: 30px; line-height: 40px;}
+h2 {font-size: 20px; line-height: 30px;}
+h3 {font-size: 16px;}
+
+/*=====<[3.2] - Forms>=====*/
+/*margin/padding*/
+[class*="frmgro"], [class*="frmspr"], [class*="btnscn"] {margin: 10px 0;}
+[class*="cntcls"] {margin-right: -10px; margin-left: -10px;}
+[class*="cols-"], [class*="cntcls-n"]>* {padding: 0 10px; position: relative;}
+[class*="lstcl-100p"]>:last-child, [class*="cols-n12"] {min-width: 100%; clear: both;}
