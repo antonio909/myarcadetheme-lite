@@ -139,3 +139,34 @@ input+span {vertical-align: middle;}
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus, .mt-slct.focus .selecter-selected {box-shadow: 0 0 10px rgba(0,0,0,.05);}
 /*valid*/
 [class*="frm-ok"] input, [class*="frm-ok"] textarea, [class*="frm-ok"] select, [class*="frm-ok"] .mt-slct .selecter-selected {background-color: #F9FCF6 !important; border: 1px solid #EEF6E5 !important;}
+[class*="frm-ok"] input, [class*="frm-ok"] textarea, [class*="frm-ok"] select, [class*="frm-ok"] .mt-slct .selecter-selected, label[class*="frm-ok"]:before, label[class*="frm-ok"]:after {color: #8CBF52 !important;}
+[class*="frm-ok"] ::-webkit-input-placeholder {color: #8CBF52 !important;}
+[class*="frm-ok"] ::-moz-placeholder {color: #8CBF52 !important;}
+[class*="frm-ok"] :-ms-input-placeholder {color: #8CBF52 !important;}
+/*invalid*/
+[class*="frm-no"] input, [class*="frm-no"] textarea, [class*="frm-no"] select, [class*="frm-no"] .mt-slct .selecter-selected {background-color: #FFF8F7 !important; border: 1px solid #FEEAE7 !important;}
+[class*="frm-no"] input, [class*="frm-no"] textarea, [class*="frm-no"] select, [class*="frm-no"] .mt-slct .selecter-selected, label[class*="frm-no"]:before, label[class*="frm-no"]:after {color: #F77361 !important;}
+[class*="frm-no"] ::-webkit-input-placeholder {color: #F77361 !important;}
+[class*="frm-no"] ::-moz-placeholder {color: #F77361 !important;}
+[class*="frm-no"] :-ms-input-placeholder {color: #F77361 !important;}
+/*Input radio/checkbox*/
+.picker-element {opacity: 0; position: absolute; z-index: -1; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none; transition: none;}
+.picker {cursor: pointer; position: relative; padding: 0 25px; display: inline-block; vertical-align: top;}
+.picker .picker-label {cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none;}
+.picker .picker-handle {border: 1px solid #ccc; height: 16px; margin: 0 5px 0 0; width: 16px; position: absolute; left: 0; top: 12px;}
+.picker.picker-radio .picker-flag, .picker.picker-checkbox .picker-flag {background: #fff; display: block; height: 8px; margin: 3px; width: 8px;}
+/*Radio*/
+.picker.picker-radio .picker-handle {border-radius: 8px;}
+.picker.picker-radio .picker-flag {border-radius: 4px;}
+/*Checkbox*/
+.picker.picker-checkbox .picker-handle {border-radius: 3px;}
+.picker.picker-checkbox .picker-flag {border-radius: 2px;}
+/*Disabled*/
+.picker.disabled {opacity: .5;}
+.picker.disabled, .picker.disabled .picker-label, .picker.disabled .picker-handle {cursor: default;}
+/*Buttons*/
+[class*="botn"], a[class*="botn"], button, input[type="reset"], input[type="submit"], a.read-moder {display: inline-block; vertical-align: top; margin-top: 0; padding: 5px 15px; line-height: 30px; font-weight: 700; text-align: center;}
+button, input[type="reset"], input[type="submit"] {text-transform: uppercase; font-weight: 600;}
+/*Active*/
+[class*="botn"]:active, button:active, input[type="reset"]:active, input[type="submit"]:active, a.read-more:active {box-shadow: inset 0 2px 4px rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.2);}
+/*mt-slct-cn*/
