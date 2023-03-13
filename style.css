@@ -258,3 +258,16 @@ a img {-webkit-transform: translateZ(0); -moz-transform: translateZ(0); transfor
 .admin_actions {margin-top: 30px; text-align: center;}
 
 /*=====<[3.4] - Flexbox, Grid>=====*/
+.game-cn {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-between; align-items: flex-start;}
+.left_game_sidebar, .right_game_sidebar {margin: 0 10px; width: 200px; flex: 0 0 auto;}
+.myarcade_game_wrap {margin: 0 10px; width: 100%;}
+.flex_center {justify-content: center !important;}
+@media only screen and (max-width: 1200px) {
+	.game-cn {flex-wrap: wrap; justify-content: center;}
+	.myarcade_game_wrap {order: 1;}
+	.left_game_sidebar, .right_game_sidebar {order: 2; width: 90%; margin: 0 10px;}
+	.widget_mabp_random_games ul {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;}
+}
+
+/*=====<[4.0] - Font Awesome>*/
+[class*="fa-"]:before, [class*="fa-"]:after, .selecter-selected:after, .menu-item-has-children:after, .bx-prev, .bx-next, .menu-item-has-children > a:after, .lst-menu > li > a:before, .mt-slct-cn .selecter-item.selected:before, .remove-parent:before, [class^="award-"]:before, #hall_of_fame .highscores:before, #hall_of_fame .plays:before, .wp-pagenavi a[class$="link"]:before, .wp-pagenavi a.prev:before, .wp-pagenavi a.next:before, .ftcn .menu > li > a:before {font-family: FontAwesome; font-weight: normal; font-style: normal; font-size: inherit; text-decoration: inherit; width: auto; height: auto; line-height: inherit; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: garyscale; display: inline-block; vertical-align: top;}
